@@ -11,7 +11,7 @@ MPL的代码与示例练习
 > 附：`git`的简洁命令：
 >
 > ```bash
-> git config --global alias.gacp '!git add . && git commit -m "$1" && git push'
+> git config --global alias.gacp '!f() { git add -A && git commit -m "$*" && git push; }; f'
 > git gacp ~
 > ```
 
